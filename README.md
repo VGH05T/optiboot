@@ -6,7 +6,7 @@ With focus on Atmega328p and:
 I add some files and board configuration for Arduino with Atmega328p.
 
 Balrog-kun description of optiboot used here:
-Optiboot for nRF24L01+
+Using with nRF24L01+
 ======================
 This is a modifed Optiboot bootloader for Arduino.  The two main features I added are:
 
