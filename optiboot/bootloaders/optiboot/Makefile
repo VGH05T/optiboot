@@ -138,7 +138,7 @@ ifdef LED_START_FLASHES
 LED_START_FLASHES_CMD = -DLED_START_FLASHES=$(LED_START_FLASHES)
 dummy = FORCE
 else
-LED_START_FLASHES_CMD = -DLED_START_FLASHES=3
+LED_START_FLASHES_CMD = -DLED_START_FLASHES=0
 endif
 
 ifdef RADIO_UART
@@ -576,6 +576,13 @@ atmega328_pro8: TARGET = atmega328_pro_8MHz
 atmega328_pro8: CHIP = atmega328
 atmega328_pro8:
 	$(MAKE) $(CHIP) AVR_FREQ=8000000L LED_START_FLASHES=3
+	mv $(PROGRAM)_$(CHIP).hex $(PROGRAM)_$(TARGET).hex
+	mv $(PROGRAM)_$(CHIP).lst $(PROGRAM)_$(TARGET).lst
+	
+atmega328_pro8_noBlink: TARGET = atmega328_pro_8MHz_noBlink
+atmega328_pro8_noBlink: CHIP = atmega328
+atmega328_pro8_noBlink:
+	$(MAKE) $(CHIP) AVR_FREQ=8000000L
 	mv $(PROGRAM)_$(CHIP).hex $(PROGRAM)_$(TARGET).hex
 	mv $(PROGRAM)_$(CHIP).lst $(PROGRAM)_$(TARGET).lst
 
