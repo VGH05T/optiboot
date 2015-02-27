@@ -1,8 +1,10 @@
 Optiboot for Atmega328p
 ======================
 With focus on Atmega328p and:
-   -Motivated by Viking star (http://arduinoalternatorregulator.blogspot.com.br/2014/06/burning-arduino-33v-8mhz-atmega328p.html)
-   -Modified from Balrog-kun (https://github.com/balrog-kun/optiboot/tree/master), 
+*   Motivated by Viking star (http://arduinoalternatorregulator.blogspot.com.br/2014/06/burning-arduino-33v-8mhz-atmega328p.html);
+
+*   Modified from Balrog-kun (https://github.com/balrog-kun/optiboot/tree/master), 
+
 I add some files and board configuration for Arduino with Atmega328p.
 
 Balrog-kun description of optiboot used here:
