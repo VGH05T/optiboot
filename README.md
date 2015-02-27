@@ -1,7 +1,14 @@
+Optiboot for Atmega328p
+======================
+With focus on Atmega328p and:
+   -Motivated by Viking star (http://arduinoalternatorregulator.blogspot.com.br/2014/06/burning-arduino-33v-8mhz-atmega328p.html)
+   -Modified from Balrog-kun (https://github.com/balrog-kun/optiboot/tree/master), 
+I add some files and board configuration for Arduino with Atmega328p.
+
+Balrog-kun description of optiboot used here:
 Optiboot for nRF24L01+
 ======================
-
-This is a modifed Optiboot bootloader for Arduino, added with some specific compilations for atmega328p.  The two main features I added are:
+This is a modifed Optiboot bootloader for Arduino.  The two main features I added are:
 
 *   support for the nRF24L01+ radio transciever chip for wireless reprogramming of
     your Arduinos.
