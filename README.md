@@ -1,7 +1,7 @@
 Optiboot for nRF24L01+
 ======================
 
-This is a modifed Optiboot bootloader for Arduino.  The two main features I added are:
+This is a modifed Optiboot bootloader for Arduino, added with some specific compilations for atmega328p.  The two main features I added are:
 
 *   support for the nRF24L01+ radio transciever chip for wireless reprogramming of
     your Arduinos.
@@ -34,9 +34,9 @@ To build a normal optiboot for an atmega328 just run:
 
     $ make atmega328
 
-To include EEPROM writing support add "SUPPORT_EEPROM=1"
+To include EEPROM writing support add "SUPPORT_EEPROM"=1" and "BIGBOOT=1", because EEPROM support makes bootloader bigger then 512KB and BIGBOOT is not auto set for the define "SUPPORT_EEPROM".
 
-    $ make atmega328 SUPPORT_EEPROM=1
+    $ make atmega328 SUPPORT_EEPROM=1 BIGBOOT=1
 
 To also add nRF24L01+ support you need to use "LED_START_FLASHES=0 RADIO_UART=1 FORCE_WATCHDOG=1"
 
